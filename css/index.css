@@ -1,0 +1,345 @@
+/* ourMovement css  */
+.main {
+    box-sizing: border-box;
+    height: auto;
+    display: block;
+    word-break: keep-all;
+-webkit-font-smoothing: antialiased;
+}
+
+/* header 에 넣어야 하는 부분 ??????????? */
+/* list navigation */
+.lnb {
+   padding-bottom: 80px;
+   position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  color: rgb(255,255,255);
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.lnb_nav {
+ margin-top: 35px;
+ display: flex;
+ align-items: center;
+ position: relative;
+ justify-content: center;
+  z-index: 10;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+  .nav_item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  }
+  .border_1 {display: block;
+    position: relative;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);width: 107.75px;}
+    .border_2 {display: block;
+      position: relative;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);width: 153.16px;}
+      .border_3 {display: block;
+        position: relative;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);width: 131.9px;
+      }
+  .nav_link {
+      opacity: 1;
+    margin: 0 25px;
+    line-height: 44.8px;
+    font-size: 28px;
+    display: block;
+    padding: 0 15px;
+    font-weight: 700;
+    letter-spacing:4.2px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .nav_link span {
+    display: inline-block;
+       }
+.nav_name_1 { color: rgb(255, 255, 255);}
+.nav_name_2 { color:  rgba(255, 255, 255, 0.2);}
+.nav_name_3 { color:  rgba(255, 255, 255, 0.2);}
+
+/* 버튼 아이콘 크기 수정 ????????????????????????????/????? */
+.btn-guide-arrow {
+ display: block;
+ transform: translate3d(-50%, 0, 0);
+ animation: arrow-down infinite 1.5s;
+ cursor: pointer;
+ position: absolute;
+ bottom: -40px;
+ z-index: 1;
+ left: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/button_down_wht.png);
+}
+    /* Arrow-down 애니메이션 적용 */
+ @keyframes arrow-down {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0); }
+  30% {
+    -webkit-transform: translate3d(-50%, 20%, 0);
+            transform: translate3d(-50%, 20%, 0); }
+  60% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0); } 
+          }
+
+   /* brandManifesto page */
+.brandManifesto {
+  min-height:auto;
+  height: auto;
+}
+  .manifesto_1 {
+    padding: 240px 0;
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+      min-height: auto;
+  }
+    .main_visual {
+        height: 100% !important;
+        top: 0 !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+      .main_video_d {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+         .visual_video {
+          max-width: 100%;
+          border: 0;
+          vertical-align: top;
+      }
+      .main_video_t {
+        display: none;
+      }
+.main_button{
+   position: absolute;
+   overflow: visible;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.btn_play {
+   width: 70px;
+    height: 70px;
+    background-color: rgba(5, 20, 31, 0.4); 
+    border-radius: 50%;
+} 
+.main_button span {
+   font-size: 16px;
+   display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: rgb(255,255,255); 
+    white-space: nowrap;
+    text-transform: uppercase;
+    bottom: -25px;
+}
+/* 위치수정  */
+h1 {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 1900px;
+   margin: 0 auto;
+   text-align: center;
+   line-height: 78px;
+   z-index: 1;
+   bottom: 20%;
+   font-size: 60px; 
+   font-weight: 700;
+   transition: all 0.7s ease-out;
+}
+
+ /* manifesto_2 page css */
+.manifesto_2 {
+   position: relative;
+    display: block;
+   }
+.prologe {
+   padding :  240px 0;
+    position: relative;
+    overflow: hidden;
+}
+.prologe_visual {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+}
+  /* div_video 와 video 가 main1 과 같은 값임 */
+  
+   .prologe_text {
+      text-align: center;
+      position: relative;
+      color: rgb(255, 255, 255);
+      padding: 0 30px;
+      z-index: 1;
+      font-family: 'KiaSignature', 'sans-serif';
+    }
+    .text_div {
+       display: block;
+       opacity: 1;
+       word-break: keep-all;
+      word-wrap: break-word;
+    }
+      .txt_strong   {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 44.8px;
+        display: block;
+        position: relative;
+      }
+        .text_div strong  {
+          font-weight: 700;
+        }
+     .txt_p {
+      opacity: 1;
+      visibility: inherit;
+      position: relative;
+      margin: 0;
+      display: block;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-size: 20px;
+      font-weight: 100;
+      line-height: 32px;
+     }      
+     /* .txt_span {} */
+
+
+/* tablet size  */
+@media only screen and (max-width: 959px){
+
+/* ourMovement css  */
+.ourMovement {
+  height: auto;
+}
+
+/* list navigation */
+.lnb{  padding-bottom: 45px;}
+
+.lnb_nav {
+  /* margin-top: 35px; */
+    margin-top:25px
+ }
+ /* .nav_item {} */
+.border_1 {   width:64.71px;}
+.border_2 {  width: 75.338px;}
+.border_3 {width: 75.338px;}
+
+.nav_link {
+  margin: 0 auto;
+  font-size: 13px;
+  letter-spacing: 1.95px;
+  line-height: 20.8px;
+}
+.nav_name_1 {
+  display: inline-block;
+}
+ .btn-guide-arrow {
+  /* width: 40px;
+   height: 40px; */
+    width: 20px;
+    height: 20px;
+ }
+
+ /* brandManifesto page */
+.manifesto_1 {
+    height: 100vh;
+    min-height: auto;
+    padding : 120px 0;
+}
+.visual_video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.btn_play {
+   width: 50px;
+    height: 50px;
+} 
+.main_button span {
+  display: none;
+}
+h1 {
+    width: 100%;
+    font-size: 40px;
+    max-width: 300px;
+    line-height: 52px;
+}
+
+/* manifesto_2 page */
+  .prologe {
+    padding : 120px 0;
+  } 
+    .prologe_visual {
+        height: 140%;
+        top: -20%;
+     }  
+   /* video : main 1 과 같은 값 
+   tablet 버전도 같은 값*/
+.prologe_text {
+  text-align: left;
+}
+  .txt_strong   {
+    text-align: left;
+    font-size: 22px;
+    z-index: 1;
+    line-height :35.2px;
+  }
+ .txt_p {
+  font-size: 16px;
+ line-height: 25.6px;
+ }      
+}
+
+/* mobile size */
+@media only screen and (max-width: 414px) {
+  .main {
+  min-height: auto;
+  }
+    .lnb {
+      padding-bottom: 45px;
+    }
+         .lnb_nav {
+             margin-top: 25px;
+          }
+          .border_1 { width: 0px;}
+          .border_2 { width: 18.26px;}
+          .border_3 { width: 10.07px; 
+          }
+          .nav_link {
+          margin: 0 auto;
+          font-size: 13px;
+          letter-spacing:  1.95px;
+          line-height: 20.8px;
+          }
+       .main_button{
+        top: 40%;
+       }
+}
+
+
