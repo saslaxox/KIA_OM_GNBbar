@@ -1,3 +1,97 @@
+/* GNB Bar */
+
+
+.gnb {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+/* 배경 블러 효과 */
+.gnb.is-sticky.has-bg::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.gnb::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 1px);
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.gnb::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.gnb__nav {
+  display: flex;
+  justify-content: center;
+  padding: 23px 0;
+  position: relative;
+}
+.gnb__nav li:nth-child(2), .gnb__nav li:nth-child(3) {
+  margin-left: 25px;
+}
+
+.nav__link {
+  padding: 0 23px;
+  display: block;
+  
+}
+.nav__name {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2.25px;
+  line-height: 24px;
+  opacity: 0.5;
+  position: relative;
+}
+.name1 {
+  opacity: 1;
+}
+.nav__item a:hover span {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.gnb__nav .is-active a span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -23px;
+  width: 100%;
+  height: 2px;
+  opacity: 1;
+  background-color: #fff;
+}
+.gnb__nav li a span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -23px;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.gnb.is-sticky .gnb__nav li a:hover .nav__name::before {
+  opacity: 1; }
+
+
+
+
+
 /* ourMovement css  */
 .main {
     box-sizing: border-box;
