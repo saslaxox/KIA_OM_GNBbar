@@ -6,6 +6,10 @@
   width: 100%;
   z-index: 100;
 }
+.gnb .nav {
+  z-index: 10;
+}
+
 /* 배경 블러 효과 */
 .gnb.is-sticky.has-bg::before {
   background-color: rgba(0, 0, 0, 0.2);
@@ -68,7 +72,7 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -23px;
+  bottom: -25px;
   width: 100%;
   height: 2px;
   opacity: 1;
@@ -78,7 +82,7 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -23px;
+  bottom: -25px;
   width: 100%;
   height: 2px;
   opacity: 0;
