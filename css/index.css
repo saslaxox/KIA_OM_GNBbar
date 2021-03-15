@@ -93,6 +93,56 @@
   opacity: 1; }
 
 
+@media only screen and (max-width: 565px) {
+  
+    /* 메뉴의 텍스트가 두줄로 바뀜 */
+
+  .nav__name {
+    font-size: 13px;
+    letter-spacing: 1.95px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .gnb__nav {
+    padding: 15px 0;
+  }
+  /* GNB의 하단 BORDER가 사라짐 */
+  .gnb__nav .is-active a span::before {
+    display: none;
+  }
+  .gnb__nav li a span::before {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 566px) and (max-width: 959px) {
+
+  /* 메뉴의 폰트 사이즈가 변화됨 */
+  .nav__name {
+    font-size: 13px;
+    letter-spacing: 1.95px;
+    line-height: 20px;
+  }
+
+  /* gnb 메뉴의 위아래 여백이 줄어듬 */
+  .gnb__nav {
+    padding: 15px 0;
+  }
+/* GNB의 하단 BORDER가 사라짐 */
+  .gnb__nav .is-active a span::before {
+    display: none;
+  }
+  .gnb__nav li a span::before {
+    display: none;
+  }
+    /* 각 gnb 메뉴의 간격이 줄어듬 */
+  .nav__link {
+    padding: 0 17.5px;
+  }
+
+}
 
 
 
